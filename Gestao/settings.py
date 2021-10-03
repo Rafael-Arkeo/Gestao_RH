@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'apps.documentos',
     'apps.departamentos',
     'apps.registro_hora_extra',
+    'apps.website',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'Gestao.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
