@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Gestao.urls'
+ROOT_URLCONF = 'gestao.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Gestao.wsgi.application'
+WSGI_APPLICATION = 'gestao.wsgi.application'
 
 
 # Database
