@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn gestao.wsgi --preload --log-file -
+web: gunicorn Gestao.wsgi --preload --log-file -

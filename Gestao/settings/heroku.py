@@ -4,7 +4,7 @@ Production Settings for Heroku
 
 import environ
 
-from gestao.settings.base import *
+from Gestao.settings.base import *
 
 env = environ.Env(
     # set casting, default value
