@@ -150,4 +150,4 @@ LOGOUT_REDIRECT_URL = 'login'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-COLLECTSTATIC = 1
+DISABLE_COLLECTSTATIC=1
