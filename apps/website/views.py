@@ -4,7 +4,7 @@ from apps.funcionarios.models import Funcionario
 
 @login_required
 def home(request):
-    """data = {}
+    data = {}
     data['usuario'] = request.user
-    return render(request, 'website/index.html', data)"""""
-    return HttpResponse('olá')
+    return render(request, 'website/index.html', data)
+
