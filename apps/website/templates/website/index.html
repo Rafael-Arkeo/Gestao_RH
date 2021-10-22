@@ -5,12 +5,15 @@
 
    <div class="row">
     <div class="col-sm">
-      One of three columns
+       uma de três colunas
     </div>
     <div class="col-sm">
-      Olá {{usuario.funcionario.nome}}
+     Olá {{usuario.funcionario.nome}}
     </div>
     <div class="col-sm">
+         {% if usuario.funcionario.empresa %}
+        <a href="">Editar empresa</a>
+        {% endif%}
       <a href="{% url 'logout' %}">Logout</a>
     </div>
   </div>
