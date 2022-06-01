@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block main %}
+<p>Você tem certeza que quer deletar {{departamento}}</p>
+
+<form method="post">
+    {% csrf_token%}
+    {{form}}
+    <button type="submit" >Sim</button> <a href="{% url 'lista_departamentos' %}">Não</a>
+</form>
+{% endblock%}

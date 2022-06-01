@@ -3,19 +3,23 @@
 
 {% block main %}
 
-   <div class="row">
+<div class="row">
     <div class="col-sm">
-       <a href="{% url 'lista_funcionarios' %}"> lista funcionario</a>
+        one of three columns
     </div>
     <div class="col-sm">
      Olá {{usuario.funcionario.nome}}
+        <a href="{% url 'lista_funcionarios' %}">Gerencia funcionarios</a>
+         <a href="{% url 'lista_departamentos' %}">Gerencia departamentos</a>
     </div>
+
     <div class="col-sm">
+        <a href="{% url 'logout' %}">Logout</a>
          {% if usuario.funcionario.empresa %}
-        <a href="">Editar empresa</a>
+            <a href="">Editar empresa</a>
         {% endif%}
-      <a href="{% url 'logout' %}">Logout</a>
+
     </div>
-  </div>
+</div>
 
 {% endblock%}

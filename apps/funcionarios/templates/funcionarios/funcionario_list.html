@@ -10,5 +10,7 @@
         <a href="{% url 'delete_funcionario' funcionario.id %}">Deletar</a>
     </li>
     {% endfor%}
+
 </ul>
+<a href="{% url 'create_funcionario' %}">Novo funcionario</a>
 {% endblock%}

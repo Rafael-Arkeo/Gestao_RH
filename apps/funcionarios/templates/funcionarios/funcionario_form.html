@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
-
+{% load bootstrap %}
 {% block main %}
 <h3>Atualizar funcionario</h3>
 <form method="post">
 {% csrf_token %}
-    {{form}}
-    <button type="submit", class="btn btn_primary">Atualizar</button>
+    {{form|bootstrap}}
+    <button type="submit", class="btn btn-primary">Salvar</button>
 </form>
 {% endblock%}

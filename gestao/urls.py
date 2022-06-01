@@ -19,6 +19,7 @@ import django.contrib.auth.urls
 
 urlpatterns = [
     path('funcionarios/', include('apps.funcionarios.urls')),
+    path('departamentos/', include('apps.departamentos.urls')),
     path('admin/', admin.site.urls),
     path('', include('apps.website.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
